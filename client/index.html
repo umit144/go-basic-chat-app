@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat</title>
+</head>
+
+<body class="bg-gray-100 p-4">
+  <div id="app">
+    <div class="max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+      <div class="p-4">
+        <input type="text" id="username" placeholder="Username">
+        <br>
+        <input type="text" id="message" placeholder="Message">
+        <br>
+        <button onclick="sendMessage()"
+          class="w-full py-2 px-4 bg-blue-500 text-white rounded-lg focus:outline-none hover:bg-blue-600">
+          Send
+        </button>
+      </div>
+      <ul id="chat" class="p-4"></ul>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
